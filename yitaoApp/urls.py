@@ -22,5 +22,8 @@ from yitao_django import settings
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^upload/', views.upload, name='upload'),
+    url(r'^showfiles/',views.showfiles,name='showfiles'),
+    url(r'^download/(.*)',views.download,name='download'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+
 ]

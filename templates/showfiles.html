@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载订单表</title>
+</head>
+<body>
+<ul>
+    {% for file in files %}
+
+        <li>{{ file.pubdate }}</li>
+        <li><a href="/download/{{ file.filepath }}">{{ file.filepath }}</a></li>
+        ---
+    {% endfor %}
+
+</ul>
+</body>
+</html>
