@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交结果</title>
+</head>
+<body>
+<div>
+    <p>{{ msg }}</p>
+
+</div>
+{{ success }}
+{% if  success == 'True' %}
+    <p>祝您生活愉快</p>
+{% else %}
+        <p><a href="/upload/">点击重新填写信息</a></p>
+{% endif %}
+</body>
+</html>
