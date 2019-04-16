@@ -1,12 +1,8 @@
-from django.test import TestCase
-# Create your tests here.
-import os, tempfile, zipfile
-import zipstream
 
 import os
 import zipfile
 
-startdir = "/home/djs/Desktop/yitao_django/yitaoApp"  # 要压缩的文件夹路径
+startdir = "/home/djs/Desktop/yitao_django/media/images/2019-04-12"  # 要压缩的文件夹路径
 file_news = startdir + '.zip'  # 压缩后文件夹的名字
 z = zipfile.ZipFile(file_news, 'w', zipfile.ZIP_DEFLATED)  # 参数一：文件夹名
 for dirpath, dirnames, filenames in os.walk(startdir):

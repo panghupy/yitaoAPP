@@ -9,10 +9,13 @@
     {% for file in files %}
 
         <li>{{ file.pubdate }}</li>
-        <li><a href="/download/{{ file.filepath }}">{{ file.filepath }}</a></li>
+        <li><a href="/download_file/{{ file.filepath }}">{{ file.filepath }}</a></li>
+        <li><a href="/download_images/{{ file.imgpath }}">点击下载图片压缩包</a></li>
         ---
     {% endfor %}
 
 </ul>
+
+
 </body>
 </html>

@@ -41,6 +41,16 @@
         .div {
             margin-top: 30px;
         }
+
+        .showeg {
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+
+        .contact {
+            margin-left: 30px;
+        }
+
     </style>
 
 </head>
@@ -50,18 +60,22 @@
     <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
         {#        csrf许可标签，需要该标签才能发送请求#}
         {% csrf_token %}
-        {##}
-        {# 上传图片的表单 #}
-        {#        {% for field in uploadForm %}#}
-        {#            <label>  {{ field.label }}  </label>#}
-        {#            <p class="">{{ field }} </p>#}
-        {#        {% endfor %}#}
-        {##}
-        {#        <br><br>#}
         {{ uploadForm.as_p }}
         <button type="submit" value="提交">提交</button>
 
     </form>
 </div>
+<div class="showeg">
+    <p>个人信息界面截图示例：</p>
+    <div><img width="200px" src="/static/images/webwxgetmsgimg%20(1).jpeg" alt=""></div>
+
+    <p>用户订单截图示例：</p>
+    <div><img width="200px" src="/static/images/webwxgetmsgimg.jpeg" alt=""></div>
+
+</div>
+<footer>
+    <p class="contact">如有任何问题,请随时联系我们。扫描下方二维码,添加微信</p>
+    <img width="200px" src="/static/images/二维码.jpeg" alt="扫码添加微信">
+</footer>
 </body>
 </html>

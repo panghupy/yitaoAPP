@@ -5,13 +5,29 @@
     <title>一淘APP</title>
 
     <style>
+        body{
+           background-color:whitesmoke;
+        }
 
         .title {
             font-size: 50px;
 
         }
 
+        a {
+            text-align: center;
+            text-decoration: None;
+            font-size: 50px;
+        }
 
+        button {
+            margin-left: 300px;
+            display: inline-block;
+        }
+
+        footer {
+            margin-left: 120px;
+        }
     </style>
 </head>
 <body>
@@ -26,7 +42,7 @@
 
 
 <div>
-    <img src="/static/images/0.1.jpg" alt="">
+    <img class="firstimg" src="/static/images/0.1.jpg" alt="">
     <img src="/static/images/2.jpg" alt="">
     <img src="/static/images/3.jpg" alt="">
     <img src="/static/images/4.jpg" alt="">
@@ -43,6 +59,15 @@
     <img src="/static/images/14.jpg" alt="">
 </div>
 
+<div>
+    <button><a href="/upload/">点击此处上传资料</a></button>
 
+</div>
+
+
+<footer>
+    <p>如有任何问题,请随时联系我们。扫描下方二维码,添加微信</p>
+    <img src="/static/images/二维码.jpeg" alt="扫码添加微信">
+</footer>
 </body>
 </html>

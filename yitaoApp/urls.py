@@ -23,7 +23,8 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^upload/', views.upload, name='upload'),
     url(r'^showfiles/',views.showfiles,name='showfiles'),
-    url(r'^download/(.*)',views.download,name='download'),
+    url(r'^download_file/(.*)',views.download_file,name='download_files'),
+    url(r'^download_images/(.*)',views.download_images,name='download_images'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 
 ]
